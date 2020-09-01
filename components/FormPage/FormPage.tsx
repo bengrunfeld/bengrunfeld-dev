@@ -1,10 +1,13 @@
-import { Container, Title } from "./FormPage.styles";
+import { UserSignUpForm, UserProfilePic } from "../";
+
+import { Container } from "./FormPage.styles";
 
 export const add = (a, b) => a + b;
 
 const FormPage = () => (
   <Container>
-    <Title>Hello</Title>
+    <UserProfilePic />
+    <UserSignUpForm />
   </Container>
 );
 
