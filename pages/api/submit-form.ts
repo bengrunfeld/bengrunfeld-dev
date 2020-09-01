@@ -36,7 +36,7 @@ export default async (req, res) => {
   };
 
   const checkStatus = response => {
-    if (response.status === 500) {
+    if (response.status > 400) {
       const error = new Error(response.statusText);
       error["response"] = response;
       return Promise.reject(error);
