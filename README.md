@@ -64,7 +64,3 @@ The should be called like so:
 ## Design
 
 Wireframes for our design have been provided by the team at Ollie. You can find them in the `/public` folder.
-
-## Cookies
-
-A cookie containing the form data will be updated on every keystroke. That way, if a User is mid-way through the form and needs to exit the tab or accidentally closes it down, all the data they entered will auto-populate when they open the App again. This improves UX, in my opinion.
