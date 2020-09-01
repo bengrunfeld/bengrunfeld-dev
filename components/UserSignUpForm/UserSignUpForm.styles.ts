@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 0 1rem;
+  padding: 3rem 1rem 0 1rem;
 
   @media screen and (min-width: ${({ theme }) => theme.size.tablet}) {
     padding: 0 2rem;
