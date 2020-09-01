@@ -25,11 +25,11 @@ Run the following command from the project root:
 
 ### Next.JS
 
-We'll use Next.JS for our front end framework. It wraps around React and gives us Static Rendering and Server Side Rendering if needed, which will be perfect fetching weather data from the API on the server rather than the client.
+We'll use Next.JS for our front end framework. It wraps around React and gives us Static Rendering and Server Side Rendering if needed. It also offers us Serverless Functions in the form of API Routes, which we can use to send requests without worrying about CORS.
 
 ### TypeScript
 
-Our data is coming from an external source, and this is where TypeScript really shines. We want to ensure that the incoming data is of a very specific shape so that it doesn't cause bugs in our app.
+TypeScript will enable us to avoid some common coding pitfalls. It will help to ensure that the data supplied to our components is of the expected shape and type.
 
 ### Styled Components
 
