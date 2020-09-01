@@ -1,30 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ollie Test App
 
-## Getting Started
+## Local Development with Docker or NPM
 
-First, run the development server:
+You can use either Docker or NPM to run and view the app. Either way works.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The reasons I've added Docker is because machines differ and the versions of Node running on them is not always consistent. Docker solves this issue by creating a VM where languages and packages are all correctly versioned.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Using NPM to Run and View the App
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Run the following commands:
 
-## Learn More
+    npm install
+    npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+## Using Docker
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you want to use **Docker** instead of **NPM** to view this app, you will of course need it to be installed. You can download it [here](https://www.docker.com/get-started)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run the following command from the project root:
 
-## Deploy on Vercel
+    docker-compose up -d
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Architecture Decisions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Next.JS
+
+We'll use Next.JS for our front end framework. It wraps around React and gives us Static Rendering and Server Side Rendering if needed, which will be perfect fetching weather data from the API on the server rather than the client.
+
+### TypeScript
+
+Our data is coming from an external source, and this is where TypeScript really shines. We want to ensure that the incoming data is of a very specific shape so that it doesn't cause bugs in our app.
+
+### Styled Components
+
+We want our code to be as semantic as possible, so that others can read it easily. Styled Components helps us achieve this in the best possible way. In my opinion `<LocalWeatherTemp />` is much more readable than:
+
+    <div class="local-weather-temp weather-detail">{data}</div>
+
+### Formik
+
+Using the Formik library in React applications is considered best practice, and we'll employ it in this app. Formik helps us perform validation, for which we use `Yup`, and also assists us in cleanly composing responses to error and loading states.
+
+### Testing
+
+Personally, I only believe in testing behavior, not UI. As such, we won't be testing that every component mounts and displays properly with Airbnb Enzyme, but rather will only use Jest to unit test pure functions that will return the same output for the same input, no matter how many times you run them.
+
+### Linting & Code Formatting
+
+Small code mistakes are inevitable - we're only human after all. Additionally, difficult to read code leads to even more mistakes. As such, we're going to use **ESLint** together with **Prettier** to ensure that our code is easy to read, and contains the least amount of bugs possible. We'll also use **Husky** to ensure that all code passes a linting test before being committed, and we'll use **Lint-Staged** to optimize the linting step so that only staged files are checked.
+
+## Typeography
+
+We'll use Google fonts:
+
+-   Alata
+-   Roboto
+
+The should be called like so:
+
+    font-family: 'Alata', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+## Design
+
+Wireframes for our design have been provided by the team at Ollie. You can find them in the `/public` folder.
+
+## Cookies
+
+A cookie containing the form data will be updated on every keystroke. That way, if a User is mid-way through the form and needs to exit the tab or accidentally closes it down, all the data they entered will auto-populate when they open the App again. This improves UX, in my opinion.
