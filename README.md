@@ -1,18 +1,25 @@
 # Ollie Test App
 
-## Local Development with Docker
+## Local Development with Docker or NPM
 
-We'll use Docker for local development. Since we're not using databases or external local services that require their own Docker images, this is of limited value currently, but if we choose to add them on, then all the groundwork is there, and we can quickly add them into Docker Compose.
+You can use either Docker or NPM to run and view the app. Either way works.
 
-## Dependencies
+The reasons I've added Docker is because machines differ and the versions of Node running on them is not always consistent. Docker solves this issue by creating a VM where languages and packages are all correctly versioned.
 
-You need Docker installed to run this app. You can download it [here](https://www.docker.com/get-started)
+## Using NPM to Run and View the App
 
-## Installation
+Run the following commands:
 
-Clone this repo, then run `docker-compose` from the project root.
+    npm install
+    npm run dev
 
-    docker-compose up
+## Using Docker
+
+If you want to use **Docker** instead of **NPM** to view this app, you will of course need it to be installed. You can download it [here](https://www.docker.com/get-started)
+
+Run the following command from the project root:
+
+    docker-compose up -d
 
 ## Architecture Decisions
 
