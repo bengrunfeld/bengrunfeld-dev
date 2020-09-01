@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import { theme } from "../theme";
 import "../theme/globals.css";
+import "../theme/formik.css";
 
 export default class MyApp extends App {
   render() {
