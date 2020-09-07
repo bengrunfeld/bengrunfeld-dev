@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import fetch from "isomorphic-unfetch";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
@@ -17,11 +17,19 @@ interface ResponseType {
   active: boolean;
 }
 
+interface PropsType {
+  name: string;
+  type: string;
+  placeholder: string;
+}
+
 const UserSignUpForm = () => {
   const [apiResponse, setResponse] = useState<ResponseType>({
     status: 0,
     active: false,
   });
+
+  const ref = useRef(null);
 
   return (
     <Container>
@@ -55,18 +63,20 @@ const UserSignUpForm = () => {
             .max(180, "Weight must be between 3lbs and 180lbs"),
         })}
         onSubmit={async (values, { setSubmitting }) => {
-          const response = await fetch("/api/submit-form", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(values),
-          });
+          alert(values);
 
-          const result = await response.json();
-          const activeResult = Object.assign({}, result, { active: true });
+          // const response = await fetch("/api/submit-form", {
+          //   method: "POST",
+          //   headers: {
+          //     "Content-Type": "application/json",
+          //   },
+          //   body: JSON.stringify(values),
+          // });
 
-          setResponse(activeResult);
+          // const result = await response.json();
+          // const activeResult = Object.assign({}, result, { active: true });
+
+          // setResponse(activeResult);
           setSubmitting(false);
         }}
       >
