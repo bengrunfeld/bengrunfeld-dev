@@ -1,4 +1,4 @@
-import { useField } from "formik";
+import { useField, FieldProps } from "formik";
 import Select, { Option, ReactSelectProps } from "react-select";
 import { ErrorMessage, SelectField, FieldLabel } from "./DropDown.styles";
 
