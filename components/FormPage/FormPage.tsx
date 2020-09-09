@@ -1,10 +1,9 @@
-import { UserSignUpForm, UserProfilePic } from "../";
+import { UserSignUpForm } from "../";
 
 import { Container } from "./FormPage.styles";
 
 const FormPage = () => (
   <Container>
-    <UserProfilePic />
     <UserSignUpForm />
   </Container>
 );

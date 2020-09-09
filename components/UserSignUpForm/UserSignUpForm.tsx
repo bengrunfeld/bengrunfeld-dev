@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import fetch from "isomorphic-unfetch";
 import { Formik, Form } from "formik";
-import * as Yup from "yup";
 
+import schema from "./validation";
 import { Message } from "../";
-import { TextInput } from "./components";
+import { TextInput, DropDown } from "./components";
 
 import {
   Container,
@@ -17,11 +17,26 @@ interface ResponseType {
   active: boolean;
 }
 
+interface PropsType {
+  name: string;
+  type: string;
+  placeholder: string;
+}
+
 const UserSignUpForm = () => {
   const [apiResponse, setResponse] = useState<ResponseType>({
     status: 0,
     active: false,
   });
+
+  const options = [
+    { value: "terrier", label: "Terrier" },
+    { value: "hound", label: "Hound" },
+    { value: "corgie", label: "Corgie" },
+    { value: "jaz", label: "Jaz" },
+  ];
+
+  const ref = useRef(null);
 
   return (
     <Container>
@@ -35,38 +50,10 @@ const UserSignUpForm = () => {
           petWeight: "",
           idealPetWeight: "",
         }}
-        validationSchema={Yup.object({
-          email: Yup.string()
-            .email("Invalid email address")
-            .required("Required"),
-          password: Yup.string()
-            .required("Required")
-            .min(8, "Password is too short - should be 8 chars minimum."),
-          confirmPassword: Yup.string()
-            .required("Required")
-            .oneOf([Yup.ref("password"), null], "Passwords must match"),
-          petName: Yup.string().required("Required"),
-          petWeight: Yup.number()
-            .required("Required")
-            .min(3, "Weight must be between 3lbs and 180lbs")
-            .max(180, "Weight must be between 3lbs and 180lbs"),
-          idealPetWeight: Yup.number()
-            .min(3, "Weight must be between 3lbs and 180lbs")
-            .max(180, "Weight must be between 3lbs and 180lbs"),
-        })}
+        validationSchema={schema}
         onSubmit={async (values, { setSubmitting }) => {
-          const response = await fetch("/api/submit-form", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(values),
-          });
-
-          const result = await response.json();
-          const activeResult = Object.assign({}, result, { active: true });
-
-          setResponse(activeResult);
+          console.log("-->> Success");
+          console.log(values);
           setSubmitting(false);
         }}
       >
@@ -111,6 +98,13 @@ const UserSignUpForm = () => {
             name="idealPetWeight"
             type="number"
             placeholder=""
+          />
+
+          <DropDown
+            label="What is your dogs breed?"
+            name="dogBreed"
+            options={options}
+            iid="dogBreed"
           />
 
           <SubmitContainer>
