@@ -1,4 +1,6 @@
-# Ollie Test App
+# Formik TypeScript
+
+The purpose of this app is to illustrate how to use Formik together with TypeScript, React-Select, and Yup.
 
 ## Local Development with Docker or NPM
 
@@ -53,14 +55,10 @@ Small code mistakes are inevitable - we're only human after all. Additionally, d
 
 We'll use Google fonts:
 
--   Alata
--   Roboto
+- Alata
+- Roboto
 
 The should be called like so:
 
     font-family: 'Alata', sans-serif;
     font-family: 'Roboto', sans-serif;
-
-## Design
-
-Wireframes for our design have been provided by the team at Ollie. You can find them in the `/public` folder.
