@@ -1,6 +1,6 @@
-# Formik TypeScript
+# BenGrunfeld.dev
 
-The purpose of this app is to illustrate how to use Formik together with TypeScript, React-Select, and Yup.
+Personal website. See Google docs for a full explanation and design notes.
 
 ## Local Development with Docker or NPM
 
