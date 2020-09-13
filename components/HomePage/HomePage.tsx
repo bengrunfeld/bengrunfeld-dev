@@ -1,13 +1,12 @@
-import { Hero } from "../";
-import { Container, Title } from "./HomePage.styles";
+import { Hero, Skills } from "../";
+import { Container } from "./HomePage.styles";
 
 const HomePage = () => (
   <Container>
     <Hero />
+    <Skills />
 
-    {/*
-       <AboutMe />
-       <Skills />
+    {/*   
        <Projects />
     */}
   </Container>
