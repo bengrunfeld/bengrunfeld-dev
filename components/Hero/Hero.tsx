@@ -1,17 +1,16 @@
-import { BigName, JobTitle, AboutMe } from "./components";
+import { InnerPageWrapper, BigTitle, Line, SubTitle } from "../";
+import { AboutMe } from "./components";
 
-import { Container, Line, LineWrapper, Wrapper } from "./Hero.styles";
+import { Container } from "./Hero.styles";
 
 const Hero = () => (
   <Container>
-    <Wrapper>
-      <BigName name="Ben Grunfeld" />
-      <JobTitle title="Full Stack Engineer" />
-      <LineWrapper>
-        <Line />
-      </LineWrapper>
+    <InnerPageWrapper>
+      <BigTitle>Ben Grunfeld</BigTitle>
+      <SubTitle>Full Stack Engineer</SubTitle>
+      <Line />
       <AboutMe />
-    </Wrapper>
+    </InnerPageWrapper>
   </Container>
 );
 

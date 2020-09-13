@@ -1,8 +1,9 @@
-import { Container, Title, Text } from "./AboutMeText.styles";
+import { SectionTitle } from "../../../";
+import { Container, Text } from "./AboutMeText.styles";
 
 const AboutMeText = () => (
   <Container>
-    <Title>About Me</Title>
+    <SectionTitle>About Me</SectionTitle>
     <Text>
       Hi, I&apos;m a Full Stack Engineer with 10 years of experience in Web
       Development.
