@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { FormPage } from "../components";
+import { HomePage } from "../components";
 
-const Home = () => <FormPage />;
+const Home = () => <HomePage />;
 
 export default Home;

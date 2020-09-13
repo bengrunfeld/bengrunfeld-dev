@@ -55,8 +55,7 @@ Small code mistakes are inevitable - we're only human after all. Additionally, d
 
 We'll use Google fonts:
 
-- Alata
-- Roboto
+- Open Sans light 300
 
 The should be called like so:
 
