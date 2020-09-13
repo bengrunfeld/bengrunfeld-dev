@@ -4,7 +4,6 @@ import { ThemeProvider } from "styled-components";
 
 import { theme } from "../theme";
 import "../theme/globals.css";
-import "../theme/formik.css";
 
 export default class MyApp extends App {
   render() {
@@ -14,7 +13,7 @@ export default class MyApp extends App {
       <>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
