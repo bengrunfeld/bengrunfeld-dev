@@ -1,4 +1,5 @@
 export { BigTitle } from "./BigTitle";
+export { Footer } from "./Footer";
 export { Hero } from "./Hero";
 export { HomePage } from "./HomePage";
 export { InnerPageWrapper } from "./InnerPageWrapper";
