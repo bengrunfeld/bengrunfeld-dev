@@ -8,8 +8,8 @@ const Projects = () => (
     <InnerPageWrapper>
       <BigTitle>Projects</BigTitle>
       <SubTitle>
-        &quot;Do you know how to beat the world record? Start running as fast as
-        you can and slowly slowly increase your speed.&quot; – Mission Grandma
+        &quot;How to beat your personal record? Start running as fast as you can
+        and slowly, slowly increase your speed.&quot; – Mission Grandma
       </SubTitle>
       <Line />
       <ProjectList />

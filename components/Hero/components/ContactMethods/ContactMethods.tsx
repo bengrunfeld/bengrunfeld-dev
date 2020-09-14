@@ -5,10 +5,30 @@ const ContactMethods = () => (
   <Container>
     <SectionTitle>Social Links</SectionTitle>
     <Text>Check out my work online.</Text>
-    <Link destination="medium">&nbsp;</Link>
-    <Link destination="linkedin">&nbsp;</Link>
-    <Link destination="meetup">&nbsp;</Link>
-    <Link destination="youtube">&nbsp;</Link>
+    <Link
+      href="https://medium.com/@binyamin"
+      target="_blank"
+      destination="medium"
+    >
+      &nbsp;
+    </Link>
+    <Link
+      href="https://www.linkedin.com/in/bengrunfeld/"
+      target="_blank"
+      destination="linkedin"
+    >
+      &nbsp;
+    </Link>
+    <Link
+      href="http://meetup.com/Melbourne-TypeScript-Meetup/"
+      target="_blank"
+      destination="meetup"
+    >
+      &nbsp;
+    </Link>
+    {/*<Link href="" destination="youtube">
+          &nbsp;
+        </Link>*/}
   </Container>
 );
 

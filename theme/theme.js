@@ -9,6 +9,7 @@ const theme = {
     darkGreen: "#228B22",
     darkRed: "#8b0000",
     errorRed: "#e53e3e",
+    footerGray: "#434242",
     gray: "#727878",
     hoverGray: "#ccc",
     lightBlue: "#c8dff3",

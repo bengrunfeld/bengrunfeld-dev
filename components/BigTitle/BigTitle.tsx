@@ -2,11 +2,12 @@ import { Container, Title } from "./BigTitle.styles";
 
 type BigNameProps = {
   children: string;
+  white?: boolean;
 };
 
-const BigTitle = ({ children }: BigNameProps) => (
+const BigTitle = ({ children, white }: BigNameProps) => (
   <Container>
-    <Title>{children}</Title>
+    <Title white={white}>{children}</Title>
   </Container>
 );
 

@@ -4,10 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  > button {
-    margin-top: 1.5rem;
-  }
 `;
 
 export const Text = styled.p`
@@ -16,13 +12,16 @@ export const Text = styled.p`
   color: ${({ theme }) => theme.colors.darkGray};
   font-size: 1.7rem;
   line-height: 2.5rem;
+  padding-bottom: 2rem !important;
 `;
 
 type LinkType = {
   destination: string;
 };
 
-export const Link = styled.button<LinkType>`
+export const Link = styled.a<LinkType>`
+  cursor: pointer;
+  display: block;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: ${({ theme }) => theme.colors.darkGray};
@@ -30,6 +29,7 @@ export const Link = styled.button<LinkType>`
   line-height: 2.5rem;
   border-radius: 0.5rem;
   padding: 1rem;
+  margin: 0.7rem 0;
   width: 16rem;
   text-align: center;
   display: block;
