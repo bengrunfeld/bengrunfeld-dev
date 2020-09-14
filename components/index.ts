@@ -1,8 +1,9 @@
 export { BigTitle } from "./BigTitle";
 export { Hero } from "./Hero";
-export { Line } from "./Line";
 export { HomePage } from "./HomePage";
-export { Skills } from "./Skills";
 export { InnerPageWrapper } from "./InnerPageWrapper";
-export { SubTitle } from "./SubTitle";
+export { Line } from "./Line";
+export { Projects } from "./Projects";
 export { SectionTitle } from "./SectionTitle";
+export { Skills } from "./Skills";
+export { SubTitle } from "./SubTitle";

@@ -1,14 +1,11 @@
-import { Hero, Skills } from "../";
+import { Hero, Skills, Projects } from "../";
 import { Container } from "./HomePage.styles";
 
 const HomePage = () => (
   <Container>
     <Hero />
     <Skills />
-
-    {/*   
-       <Projects />
-    */}
+    <Projects />
   </Container>
 );
 
