@@ -9,6 +9,9 @@ export const Container = styled.div<ContainerType>`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.colors.darkGray};
+  width: 100%;
+  position: fixed;
+  z-index: 999;
 `;
 
 export const MenuItem = styled.a`
@@ -21,6 +24,7 @@ export const MenuItem = styled.a`
   text-align: center;
 
   &:hover {
-    font-weight: 400;
+    font-size: 1.65rem;
+    font-weight: 600;
   }
 `;

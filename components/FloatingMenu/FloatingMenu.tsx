@@ -1,9 +1,15 @@
-import { Container, Title } from "./FloatingMenu.styles";
+import Link from "next/link";
+
+import { Wrapper, Container, LinkText } from "./FloatingMenu.styles";
 
 const FloatingMenu = () => (
-  <Container>
-    <Title>Hello</Title>
-  </Container>
+  <Wrapper>
+    <Link href="/code-examples">
+      <Container>
+        <LinkText>Code Examples</LinkText>
+      </Container>
+    </Link>
+  </Wrapper>
 );
 
 export default FloatingMenu;

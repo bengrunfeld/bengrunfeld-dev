@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: block;
+
+  @media screen and (min-width: ${({ theme }) => theme.size.pageWidth}) {
+    display: none;
+  }
+`;
 
 export const NavWrapper = styled.div`
   position: relative;
