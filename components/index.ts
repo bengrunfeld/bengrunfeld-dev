@@ -1,10 +1,14 @@
 export { BigTitle } from "./BigTitle";
+export { CodeExamples } from "./CodeExamples";
+export { CodeExamplesPage } from "./CodeExamplesPage";
 export { Footer } from "./Footer";
 export { Hero } from "./Hero";
 export { HomePage } from "./HomePage";
 export { InnerPageWrapper } from "./InnerPageWrapper";
 export { Line } from "./Line";
+export { Menu } from "./Menu";
 export { Projects } from "./Projects";
 export { SectionTitle } from "./SectionTitle";
+export { Nav } from "./Nav";
 export { Skills } from "./Skills";
 export { SubTitle } from "./SubTitle";
