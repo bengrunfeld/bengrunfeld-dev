@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  position: relative;
+  width: 31rem;
+  height: 23rem;
+  z-index: 555;
+`;
+
 type ContainerType = {
   show: boolean;
 };
@@ -12,12 +19,6 @@ export const Container = styled.div<ContainerType>`
   height: 100%;
   position: absolute;
   padding: 2rem;
-`;
-
-export const Wrapper = styled.div`
-  position: relative;
-  width: 31rem;
-  height: 23rem;
 `;
 
 export const Title = styled.h4`
