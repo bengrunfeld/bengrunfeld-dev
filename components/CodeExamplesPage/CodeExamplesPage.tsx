@@ -1,5 +1,5 @@
 import { Menu, Nav, CodeExamples } from "../";
-import { Container } from "./CodeExamplesPage.styles";
+import { Container, Wrapper } from "./CodeExamplesPage.styles";
 
 type PropsType = {
   children?: React.ReactNode;
@@ -8,8 +8,10 @@ type PropsType = {
 const CodeExamplesPage = ({ children }: PropsType) => (
   <Container>
     <Menu />
-    <Nav />
-    <CodeExamples>{children}</CodeExamples>
+    <Wrapper>
+      <Nav />
+      <CodeExamples>{children}</CodeExamples>
+    </Wrapper>
   </Container>
 );
 
