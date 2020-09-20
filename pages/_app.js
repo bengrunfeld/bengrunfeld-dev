@@ -13,7 +13,7 @@ export default class MyApp extends App {
       <>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
