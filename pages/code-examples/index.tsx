@@ -46,7 +46,6 @@ const Home = () => {
           techniques, and it also serves as a central repository for myself. So
           if I want to remember how to implement a dropdown using Formik and
           React Select, I can look it up easily and see a working version.
-          Pretty cool, no?
         </PageText>
 
         <PageText>Please navigate through the menu to see my work.</PageText>
