@@ -120,18 +120,3 @@ const FormPage = () => {
 };
 
 export default FormPage;
-
-/* Plan
-
-Job Listing Post
-
-Your name: text
-Company name: text
-Telephone number: text-number
-Email address: text-email
-Role title: front end, back end, full stack, devops - checkbox
-Position type: Full time, part time, freelance, intern - dropdown
-Citizenship Type: US Citizen, Green Card, Doesn't Matter - Radio button
-
-
-*/

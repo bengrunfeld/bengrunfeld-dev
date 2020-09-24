@@ -23,8 +23,4 @@ export const FieldLabel = styled.label`
 export const SelectContainer = styled.div`
   width: 100%;
   max-width: 36rem;
-
-  > * {
-    border-color: ${({ theme }) => theme.colors.darkGray} !important;
-  }
 `;
