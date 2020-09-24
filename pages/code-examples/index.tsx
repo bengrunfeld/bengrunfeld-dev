@@ -26,7 +26,7 @@ const Home = () => {
           Even having links to personal projects on Github that use said
           libraries or skills isn&apos;t sufficient proof, because unless you
           clone their library and run it locally, you can&apos;t even tell if it
-          really works, or if it looks good.{" "}
+          really works, or if it looks good.
         </PageText>
 
         <PageText>
