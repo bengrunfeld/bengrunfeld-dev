@@ -26,7 +26,7 @@ const Home = () => {
           Even having links to personal projects on Github that use said
           libraries or skills isn&apos;t sufficient proof, because unless you
           clone their library and run it locally, you can&apos;t even tell if it
-          really works, or if it looks good.{" "}
+          really works, or if it looks good.
         </PageText>
 
         <PageText>
@@ -46,7 +46,6 @@ const Home = () => {
           techniques, and it also serves as a central repository for myself. So
           if I want to remember how to implement a dropdown using Formik and
           React Select, I can look it up easily and see a working version.
-          Pretty cool, no?
         </PageText>
 
         <PageText>Please navigate through the menu to see my work.</PageText>
