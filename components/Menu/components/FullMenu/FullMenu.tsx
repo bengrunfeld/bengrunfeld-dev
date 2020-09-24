@@ -8,6 +8,7 @@ const FullMenu = ({ hide }: PropsType) => (
   <Container hide={hide}>
     <MenuItem href="/">Home</MenuItem>
     <MenuItem href="/code-examples">Code Examples</MenuItem>
+    <MenuItem href="/code-examples/basic-form">Basic Form</MenuItem>
   </Container>
 );
 

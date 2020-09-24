@@ -1,4 +1,4 @@
-import { Container, Title } from "./CodeExamples.styles";
+import { Container } from "./CodeExamples.styles";
 
 type PropsType = {
   children?: React.ReactNode;

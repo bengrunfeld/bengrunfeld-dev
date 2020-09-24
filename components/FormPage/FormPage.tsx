@@ -1,15 +1,17 @@
 import { Formik, Form } from "formik";
 import schema from "./validation";
 
+import { GitHubLink } from "../";
+
 import { TextInput, DropDown } from "./components";
 
 import {
   Container,
-  Title,
-  Text,
-  SubmitContainer,
-  SubmitButton,
   FormStyles,
+  SubmitButton,
+  SubmitContainer,
+  Text,
+  Title,
 } from "./FormPage.styles";
 
 const FormPage = () => {
@@ -115,6 +117,7 @@ const FormPage = () => {
           </FormStyles>
         </Form>
       </Formik>
+      <GitHubLink href="https://github.com/bengrunfeld/bengrunfeld-dev/blob/master/components/FormPage/FormPage.tsx" />
     </Container>
   );
 };

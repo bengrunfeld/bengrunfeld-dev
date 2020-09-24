@@ -6,7 +6,7 @@ import { Container } from "./Hero.styles";
 const Hero = () => (
   <Container>
     <InnerPageWrapper>
-      <BigTitle>Ben Grunfeld</BigTitle>
+      <BigTitle centered={true}>Ben Grunfeld</BigTitle>
       <SubTitle>Full Stack Engineer</SubTitle>
       <Line />
       <AboutMe />

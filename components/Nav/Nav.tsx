@@ -26,14 +26,6 @@ const Nav = () => {
           <Link href="/code-examples/basic-form">
             <LinkText>Basic Form</LinkText>
           </Link>
-
-          <Link href="/code-examples/react-dnd">
-            <LinkText>React DND</LinkText>
-          </Link>
-
-          <Link href="/code-examples/beautiful-dnd">
-            <LinkText>Beautiful DND</LinkText>
-          </Link>
         </NavContainer>
       </Wrapper>
       <ToggleNavButton
