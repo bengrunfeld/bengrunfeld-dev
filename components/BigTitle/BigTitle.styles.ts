@@ -4,6 +4,7 @@ export const Container = styled.div``;
 
 type TitleType = {
   white?: boolean;
+  centered?: boolean;
 };
 
 export const Title = styled.h2<TitleType>`
@@ -12,5 +13,5 @@ export const Title = styled.h2<TitleType>`
   color: ${({ theme, white }) =>
     white ? theme.colors.white : theme.colors.turquoise};
   font-size: 5.4rem;
-  text-align: center;
+  text-align: ${({ centered }) => (centered ? "center" : "left")};
 `;

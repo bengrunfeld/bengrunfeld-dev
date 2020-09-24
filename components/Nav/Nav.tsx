@@ -23,16 +23,8 @@ const Nav = () => {
 
           <Title>Code Examples</Title>
 
-          <Link href="/code-examples/formik-typescript">
-            <LinkText>Formik TypeScript</LinkText>
-          </Link>
-
-          <Link href="/code-examples/react-dnd">
-            <LinkText>React DND</LinkText>
-          </Link>
-
-          <Link href="/code-examples/beautiful-dnd">
-            <LinkText>Beautiful DND</LinkText>
+          <Link href="/code-examples/basic-form">
+            <LinkText>Basic Form</LinkText>
           </Link>
         </NavContainer>
       </Wrapper>
