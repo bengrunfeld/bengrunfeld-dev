@@ -1,5 +1,6 @@
 const theme = {
   colors: {
+    activeBlue: "#73afe2",
     black: "#000",
     blue: "#0000FF",
     borderGray: "#727878",

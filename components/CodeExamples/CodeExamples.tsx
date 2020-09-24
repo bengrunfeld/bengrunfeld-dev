@@ -5,10 +5,7 @@ type PropsType = {
 };
 
 const CodeExamples = ({ children }: PropsType) => (
-  <Container>
-    <Title>Hi</Title>
-    {children}
-  </Container>
+  <Container>{children}</Container>
 );
 
 export default CodeExamples;

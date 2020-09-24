@@ -3,6 +3,7 @@ export { CodeExamples } from "./CodeExamples";
 export { CodeExamplesPage } from "./CodeExamplesPage";
 export { FloatingMenu } from "./FloatingMenu";
 export { Footer } from "./Footer";
+export { FormPage } from "./FormPage";
 export { Hero } from "./Hero";
 export { HomePage } from "./HomePage";
 export { InnerPageWrapper } from "./InnerPageWrapper";
