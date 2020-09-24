@@ -23,4 +23,9 @@ export const FieldLabel = styled.label`
 export const SelectContainer = styled.div`
   width: 100%;
   max-width: 36rem;
+
+  > * {
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+  }
 `;
