@@ -12,6 +12,22 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-179045229-1"
+          ></script>
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-179045229-1');
+              `,
+            }}
+          ></script>
+
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
