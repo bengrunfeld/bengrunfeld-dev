@@ -6,7 +6,7 @@ import { Container } from "./Projects.styles";
 const Projects = () => (
   <Container>
     <InnerPageWrapper>
-      <BigTitle>Projects</BigTitle>
+      <BigTitle centered={true}>Projects</BigTitle>
       <SubTitle>
         &quot;How to beat your personal record? Start running as fast as you can
         and slowly, slowly increase your speed.&quot; – Mission Grandma
