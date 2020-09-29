@@ -1,3 +1,4 @@
+export { AnimationsPage } from "./AnimationsPage";
 export { BigTitle } from "./BigTitle";
 export { CodeExamples } from "./CodeExamples";
 export { CodeExamplesPage } from "./CodeExamplesPage";

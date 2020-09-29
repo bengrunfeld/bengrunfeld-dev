@@ -33,21 +33,24 @@ export const Link = styled.a<LinkType>`
   width: 16rem;
   text-align: center;
   display: block;
-  border: 1px solid ${({ theme }) => theme.colors.lightGray};
+  border: 1px solid ${({ theme }) => theme.colors.buttonBorder};
 
   background: ${({ theme, destination }) => {
     if (destination === "linkedin") return theme.colors.lightBlue;
     if (destination === "medium") return theme.colors.lightGreen;
     if (destination === "meetup") return theme.colors.lightRed;
-    if (destination === "youtube") return theme.colors.lightGray;
+    if (destination === "github") return theme.colors.lightGray;
   }};
 
   background-image: ${({ destination }) => {
     if (destination === "medium") return "url(/medium.png)";
     if (destination === "linkedin") return "url(/linkedin.png)";
     if (destination === "meetup") return "url(/meetup.png)";
-    if (destination === "youtube") return "url(/youtube.png)";
+    if (destination === "github") return "url(/github.png)";
   }};
 
   background-position: center;
+
+  background-size: auto 3.5rem;
+  background-repeat: no-repeat;
 `;

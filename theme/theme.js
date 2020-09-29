@@ -4,6 +4,7 @@ const theme = {
     black: "#000",
     blue: "#0000FF",
     borderGray: "#727878",
+    buttonBorder: "#b5acac",
     cobaltBlue: "#6960EC",
     darkBlue: "#000080",
     darkGray: "#3e3e3e",
