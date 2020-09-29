@@ -26,6 +26,10 @@ const Nav = () => {
           <Link href="/code-examples/basic-form">
             <LinkText>Basic Form</LinkText>
           </Link>
+
+          <Link href="/code-examples/animations">
+            <LinkText>Animations</LinkText>
+          </Link>
         </NavContainer>
       </Wrapper>
       <ToggleNavButton

@@ -1,8 +1,12 @@
+import { MoveBall } from "./components";
+
 import { Container, Title } from "./AnimationsPage.styles";
 
 const AnimationsPage = () => (
   <Container>
-    <Title>Hello</Title>
+    <Title>Animations</Title>
+
+    <MoveBall />
   </Container>
 );
 
