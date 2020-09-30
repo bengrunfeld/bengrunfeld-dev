@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
-
-export const Title = styled.h1`
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.8rem;
-  color: ${({ theme }) => theme.colors.darkGray};
-  padding-bottom: 3rem;
+export const Container = styled.div`
+  h2 {
+    padding-bottom: 5rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -41,4 +38,8 @@ export const FormStyles = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
+
+  > * {
+    margin-bottom: 2rem;
+  }
 `;

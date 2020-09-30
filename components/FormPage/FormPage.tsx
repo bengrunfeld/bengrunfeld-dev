@@ -1,7 +1,7 @@
 import { Formik, Form } from "formik";
 import schema from "./validation";
 
-import { GitHubLink } from "../";
+import { GitHubLink, BigTitle } from "../";
 
 import { TextInput, DropDown } from "./components";
 
@@ -11,7 +11,6 @@ import {
   SubmitButton,
   SubmitContainer,
   Text,
-  Title,
 } from "./FormPage.styles";
 
 const FormPage = () => {
@@ -23,7 +22,7 @@ const FormPage = () => {
 
   return (
     <Container>
-      <Title>Basic Form</Title>
+      <BigTitle>Basic Form</BigTitle>
       <Text>
         This form uses Formik as a base, React-Select for the dropdowns, and Yup
         for data validation. Since this is just an example, no data is recorded.
