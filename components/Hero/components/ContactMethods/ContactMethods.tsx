@@ -26,9 +26,15 @@ const ContactMethods = () => (
     >
       &nbsp;
     </Link>
-    {/*<Link href="" destination="youtube">
-          &nbsp;
-        </Link>*/}
+    {
+      <Link
+        href="https://github.com/bengrunfeld"
+        target="_blank"
+        destination="github"
+      >
+        &nbsp;
+      </Link>
+    }
   </Container>
 );
 
