@@ -13,7 +13,7 @@ export const Link = styled.a`
   border: 1px solid ${({ theme }) => theme.colors.darkGray};
   background: ${({ theme }) => theme.colors.lightGray};
   background-image: url("/github.png");
-  background-size: 12rem;
+  background-size: auto 4rem;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 0.5rem;

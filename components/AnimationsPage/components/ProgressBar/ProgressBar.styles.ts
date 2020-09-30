@@ -17,11 +17,13 @@ export const InputContainer = styled.div`
 
 export const FormStyles = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 
   > * {
     display: inline-block;
+    margin-bottom: 2rem;
   }
 
   input {
@@ -30,6 +32,15 @@ export const FormStyles = styled.div`
 
   label {
     display: none;
+  }
+
+  a,
+  button {
+    width: 12rem;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.size.pageWidth}) {
+    flex-direction: row;
   }
 `;
 
