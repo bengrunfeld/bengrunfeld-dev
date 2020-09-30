@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Formik, Form } from "formik";
 
 import schema from "./validation";
-import { AnimationWindow, Bar, Button, Title, Text } from "../";
+import { AnimationWindow, Bar, Button, Title, Text, Link } from "../";
 
 import { TextInput } from "../../../FormPage/components";
 
@@ -42,7 +42,12 @@ const ProgressBar = () => {
                 showError={true}
               />
               <Button type="submit">Submit</Button>
-              <Button>See Code</Button>
+              <Link
+                target="_blank"
+                href="https://github.com/bengrunfeld/bengrunfeld-dev/tree/master/components/AnimationsPage/components/ProgressBar"
+              >
+                See Code
+              </Link>
             </FormStyles>
           </Form>
         </Formik>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Title, Text, AnimationWindow, Button } from "../";
+import { Title, Text, AnimationWindow, Button, Link } from "../";
 
 import { ButtonContainer, Container, Ball } from "./MoveBall.styles";
 
@@ -18,7 +18,12 @@ const MoveBall = () => {
         <Button clickFn={() => setPaused(!paused)}>
           {paused ? "Move Ball" : "Pause"}
         </Button>
-        <Button>See Code</Button>
+        <Link
+          target="_blank"
+          href="https://github.com/bengrunfeld/bengrunfeld-dev/tree/master/components/AnimationsPage/components/MoveBall"
+        >
+          See Code
+        </Link>
       </ButtonContainer>
     </Container>
   );
