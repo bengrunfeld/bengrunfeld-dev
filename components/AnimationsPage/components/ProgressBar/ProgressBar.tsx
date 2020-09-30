@@ -1,17 +1,51 @@
 import { useState } from "react";
-import { AnimationWindow, Button, Title, Text } from "../";
+import { Formik, Form } from "formik";
 
-import { Container, InputContainer, InputField } from "./ProgressBar.styles";
+import schema from "./validation";
+import { AnimationWindow, Bar, Button, Title, Text } from "../";
+
+import { TextInput } from "../../../FormPage/components";
+
+import { Container, InputContainer, FormStyles } from "./ProgressBar.styles";
 
 const ProgressBar = () => {
+  const [percent, setPercent] = useState(0);
+
   return (
     <Container>
-      <Title>Simple Animation</Title>
+      <Title>Progress Bar</Title>
       <Text>Press the button to trigger the animation</Text>
-      <AnimationWindow></AnimationWindow>
+      <AnimationWindow>
+        <Bar percent={percent} />
+      </AnimationWindow>
 
       <InputContainer>
-        <InputField />
+        <Formik
+          initialValues={{
+            progressPercent: "",
+          }}
+          validationSchema={schema}
+          onSubmit={(values, { setSubmitting }) => {
+            const { progressPercent } = values;
+
+            setPercent(parseInt(progressPercent));
+            setSubmitting(false);
+          }}
+        >
+          <Form>
+            <FormStyles>
+              <TextInput
+                label=""
+                name="progressPercent"
+                type="number"
+                placeholder="Enter progress %"
+                showError={true}
+              />
+              <Button type="submit">Submit</Button>
+              <Button>See Code</Button>
+            </FormStyles>
+          </Form>
+        </Formik>
       </InputContainer>
     </Container>
   );
