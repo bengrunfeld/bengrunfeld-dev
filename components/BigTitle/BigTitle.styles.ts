@@ -14,4 +14,5 @@ export const Title = styled.h2<TitleType>`
     white ? theme.colors.white : theme.colors.turquoise};
   font-size: 5.4rem;
   text-align: ${({ centered }) => (centered ? "center" : "left")};
+  line-height: 5rem;
 `;

@@ -2,19 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 
-export const Title = styled.h3`
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  padding: 1rem 0 2rem 0;
-`;
-
-export const Text = styled.p`
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 1.8rem;
-`;
-
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;

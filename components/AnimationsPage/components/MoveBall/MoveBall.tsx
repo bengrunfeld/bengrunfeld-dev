@@ -1,13 +1,7 @@
 import { useState } from "react";
-import { AnimationWindow, Button } from "../";
+import { Title, Text, AnimationWindow, Button } from "../";
 
-import {
-  ButtonContainer,
-  Container,
-  Title,
-  Text,
-  Ball,
-} from "./MoveBall.styles";
+import { ButtonContainer, Container, Ball } from "./MoveBall.styles";
 
 const MoveBall = () => {
   const [paused, setPaused] = useState(true);
