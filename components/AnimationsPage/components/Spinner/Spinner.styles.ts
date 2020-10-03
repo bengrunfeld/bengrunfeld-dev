@@ -11,29 +11,26 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-type BallType = {
+type SpinnerType = {
   paused: boolean;
 };
 
-export const Ball = styled.div<BallType>`
-  width: 3rem;
-  height: 3rem;
-  background: ${({ theme }) => theme.colors.darkGreen};
+export const SpinnerObject = styled.div<SpinnerType>`
+  border: 1.6rem solid ${({ theme }) => theme.colors.lightGray};
+  border-top: 1.6rem solid ${({ theme }) => theme.colors.activeBlue};
   border-radius: 50%;
-  position: relative;
+  width: 12rem;
+  height: 12rem;
 
-  @keyframes moveball {
-    from {
-      left: 0;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
     }
-    to {
-      left: calc(100% - 6rem);
+    100% {
+      transform: rotate(360deg);
     }
   }
 
-  animation-name: moveball;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation: spin 1.5s linear infinite;
   animation-play-state: ${({ paused }) => (paused ? "paused" : "running")};
 `;

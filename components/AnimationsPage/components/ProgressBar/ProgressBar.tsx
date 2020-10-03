@@ -14,7 +14,9 @@ const ProgressBar = () => {
   return (
     <Container>
       <Title>Progress Bar</Title>
-      <Text>Press the button to trigger the animation</Text>
+      <Text>
+        Enter a numeric percentage and press Enter or click the Submit button
+      </Text>
       <AnimationWindow>
         <Bar percent={percent} />
       </AnimationWindow>
