@@ -1,6 +1,6 @@
 import { BigTitle } from "../";
 
-import { MoveBall, ProgressBar } from "./components";
+import { MoveBall, ProgressBar, Spinner } from "./components";
 
 import { Container } from "./AnimationsPage.styles";
 
@@ -10,6 +10,7 @@ const AnimationsPage = () => (
 
     <MoveBall />
     <ProgressBar />
+    <Spinner />
   </Container>
 );
 
