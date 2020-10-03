@@ -27,7 +27,7 @@ export const Ball = styled.div<BallType>`
       left: 0;
     }
     to {
-      left: calc(100% - 3rem);
+      left: calc(100% - 6rem);
     }
   }
 
