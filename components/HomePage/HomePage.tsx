@@ -4,7 +4,6 @@ import { Container } from "./HomePage.styles";
 
 const HomePage = () => (
   <Container>
-    <FloatingMenu />
     <Hero />
     <Skills />
     <Projects />
